@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URI, {})
     .catch(err => console.error("❌ MongoDB Connection Error:", err));
 
 // ✅ Import Routes
-const userRoutes = require('./routes/userRoutes');
+const userRoutes = require('./userRoutes');
 app.use('/api/users', userRoutes);
 
 // ✅ Basic API Test
